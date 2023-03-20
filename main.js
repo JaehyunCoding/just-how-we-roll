@@ -23,6 +23,7 @@ const getRandomNumber = function(max) {
  *******************/
 
 let d6img = document.querySelector(`#d6-roll`)
+let double6click = document.querySelector(`#double-d6-buttons`)
 let double6img1 = document.querySelector(`#double-d6-roll-1`)
 let double6img2 = document.querySelector(`#double-d6-roll-2`)
 let d12img = document.querySelector(`#d12-roll`)
@@ -61,7 +62,7 @@ d6img.addEventListener(`click`, function(){
     d6mean.innerText = `${diceSum(sixes)/sixes.length}`
 })
 
-double6img1.addEventListener(`click`, function(){
+double6click.addEventListener(`click`, function(){
     console.log(`double6 clicked`)
     let rand1 = getRandomNumber(6)
     let rand2 = getRandomNumber(6)
